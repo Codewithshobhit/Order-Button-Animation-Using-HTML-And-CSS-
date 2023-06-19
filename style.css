@@ -1,0 +1,83 @@
+main {
+  width: 600px;
+  height: 600px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #afc0f2;
+}
+
+.car {
+  position: absolute;
+  bottom: calc(100% - 5px);
+  left: 0;
+  opacity: 0;
+}
+
+svg {
+  width: 72px;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background: #20274a;
+  border: none;
+  border-radius: 25px;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.light {
+  position: absolute;
+  opacity: 0;
+  width: 3px;
+  height: 3px;
+  right: 0;
+  top: 20px;
+  background: yellow;
+}
+
+.light:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  top: 4px;
+  left: 0;
+  background: linear-gradient(to right, #ffeb00, #ffeb003d);
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+  transform: rotate(45deg);
+}
+
+.complited {
+  position: absolute;
+  top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  opacity: 0;
+}
+
+.complited  svg {
+            width: 12px;
+            height: 10px;
+            fill: none;
+            margin: 0 0 0 4px;
+            stroke: #16BF78;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: 16px;
+            stroke-dashoffset: 16px;
+        }
